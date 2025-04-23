@@ -45,11 +45,3 @@ entities =
 ];
 var demoEntities3 = await freeSql.Insert(entities).ExecuteInsertedAsync();
 Console.WriteLine($"检查主键是否正常{demoEntities3.All(a => a.Id > 0)}");
-
-entities =
-[
-    new DemoEntity() { Name = "111" },
-    new DemoEntity() { Name = "222" }
-];
-var demoEntities4 = await freeSql.Insert(entities).ExecuteInsertedAsync();
-Console.WriteLine($"检查主键是否正常{demoEntities4.All(a => a.Id > 0)}");
