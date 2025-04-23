@@ -9,7 +9,7 @@ public class DemoEntity
     /// ID
     /// </summary>
     [Column(IsPrimary = true, IsIdentity = true)]
-    public int Id { get; set; }
+    public long Id { get; set; }
 
     /// <summary>
     /// 项目文件列表
